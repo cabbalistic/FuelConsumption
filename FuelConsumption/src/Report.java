@@ -7,7 +7,7 @@ public class Report {
     SqlConnection connection = new SqlConnection();
     MainManu ruturnMain = new MainManu();
 
-    public String[]  filterDate(){
+    private String[]  filterDate(){
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter year: ");
         String year = input.next();
@@ -20,7 +20,7 @@ public class Report {
         return new String[] {year, month, day};
     }
 
-    public int[] filterDayCount() {
+    private int[] filterDayCount() {
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter the days: ");
         int days = input.nextInt();
@@ -76,7 +76,7 @@ public class Report {
         }
     }
 
-    public void generalReport() throws Exception {
+    private void generalReport() throws Exception {
         String dbResult[] = connection.sqlConnection();
         String database = dbResult[0];
         String dbconnection = dbResult[1];
@@ -122,7 +122,7 @@ public class Report {
         }
     }
 
-    public void detailedReport(String year, String month ,String day) throws Exception {
+    private void detailedReport(String year, String month ,String day) throws Exception {
         String dbResult[] = connection.sqlConnection();
         String database = dbResult[0];
         String dbconnection = dbResult[1];
@@ -166,7 +166,7 @@ public class Report {
         }
     }
 
-    public void nDaysAgoReport(int days, int records) throws Exception {
+    private void nDaysAgoReport(int days, int records) throws Exception {
         String dbResult[] = connection.sqlConnection();
         String database = dbResult[0];
         String dbconnection = dbResult[1];
