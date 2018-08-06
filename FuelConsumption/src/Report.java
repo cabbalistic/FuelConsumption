@@ -6,9 +6,10 @@ public class Report {
 
     SqlConnection connection = new SqlConnection();
     MainManu ruturnMain = new MainManu();
+    Scanner input = new Scanner(System.in);
 
     private String[]  filterDate(){
-        Scanner input = new Scanner(System.in);
+       // Scanner input = new Scanner(System.in);
         System.out.print("Please enter year: ");
         String year = input.next();
         System.out.print("Please enter month: ");
@@ -21,7 +22,7 @@ public class Report {
     }
 
     private int[] filterDayCount() {
-        Scanner input = new Scanner(System.in);
+        //Scanner input = new Scanner(System.in);
         System.out.print("Please enter the days: ");
         int days = input.nextInt();
         System.out.print("Please record count: ");
