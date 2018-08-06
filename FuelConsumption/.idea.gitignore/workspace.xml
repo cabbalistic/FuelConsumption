@@ -48,8 +48,8 @@
       <file leaf-file-name="Report.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Report.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="174" column="129" selection-start-line="174" selection-start-column="129" selection-end-line="174" selection-end-column="129" />
+            <state relative-caret-position="252">
+              <caret line="174" column="155" selection-start-line="174" selection-start-column="155" selection-end-line="174" selection-end-column="155" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -216,7 +216,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="172" width="1040" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -329,8 +328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Report.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="174" column="129" selection-start-line="174" selection-start-column="129" selection-end-line="174" selection-end-column="129" />
+        <state relative-caret-position="252">
+          <caret line="174" column="155" selection-start-line="174" selection-start-column="155" selection-end-line="174" selection-end-column="155" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
