@@ -16,7 +16,7 @@ public class Report {
         return new String[] {year, month, day};
 
     }
-    public static void viewReport(){
+    public static void viewReport() throws Exception {
         generalReport();
         averageReport();
         System.out.println();
@@ -48,9 +48,9 @@ public class Report {
         }
     }
 
-    public static void generalReport(){
+    public static void generalReport() throws Exception {
         try (Connection con = DriverManager.getConnection(SqlConnection.sqlConnection()); Statement stmt = con.createStatement();) {
-            String SQL = "SELECT km, fuel, CONVERT(char(10), date,126) as date FROM inputValue order by date";
+            String SQL = "SELECT km, fuel, date FROM inputValue order by date";
             ResultSet rs = stmt.executeQuery(SQL);
 
             System.out.print("  km \t|  fuel |  date\t\t  | ltrPerKm | ltrPer100km\n---------------------------------------------------------\n");
@@ -74,7 +74,7 @@ public class Report {
         }
     }
 
-    public static void averageReport(){
+    public static void averageReport() throws Exception {
         try (Connection con = DriverManager.getConnection(SqlConnection.sqlConnection()); Statement stmt = con.createStatement();) {
             String SQL = "SELECT (SUM(fuel)/SUM(km))*100 as average FROM inputValue";
             ResultSet rs = stmt.executeQuery(SQL);
@@ -92,7 +92,7 @@ public class Report {
         }
     }
 
-    public static void detailedReport(String year, String month ,String day){
+    public static void detailedReport(String year, String month ,String day) throws Exception {
         try (Connection con = DriverManager.getConnection(SqlConnection.sqlConnection()); Statement stmt = con.createStatement();) {
             String SQL = "SELECT km, fuel, CONVERT(char(10), date,126) as date FROM inputValue WHERE DATEPART(year,date)=" + year +" AND DATEPART(month,date)=" + month + " AND DATEPART(day,date)=" + day;
             ResultSet rs = stmt.executeQuery(SQL);

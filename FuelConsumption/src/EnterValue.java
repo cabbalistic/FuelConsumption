@@ -2,7 +2,7 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class EnterValue {
-    public static void enterValue(){
+    public static void enterValue() throws Exception {
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter the km: ");
         double km = input.nextDouble();
