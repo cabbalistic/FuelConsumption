@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Microsoft JDBC DRIVER 6" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.1" level="project" />
+    <orderEntry type="library" name="idea-gitignore-3.0.0.141" level="project" />
   </component>
 </module>
