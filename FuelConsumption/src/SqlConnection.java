@@ -1,5 +1,5 @@
 public class SqlConnection {
-    public static String sqlConnection() throws Exception {
+    public static String[] sqlConnection() throws Exception {
         String dbConnection = "";
         String database = ReadDbConfigFile.readFileAsString();
         switch(database)
@@ -11,6 +11,6 @@ public class SqlConnection {
                 dbConnection = "jdbc:mysql://localhost/test?user=ovi&password=123";
                 break;
         }
-        return dbConnection;
+        return new String[] {database,dbConnection};
     }
 }

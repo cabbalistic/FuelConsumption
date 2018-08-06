@@ -11,7 +11,11 @@ public class EnterValue {
         System.out.print("Please enter the date: ");
         String date = input.next();
 
-        try (Connection con = DriverManager.getConnection(SqlConnection.sqlConnection()); Statement stmt = con.createStatement();) {
+        String dbResult[] = SqlConnection.sqlConnection();
+        String database = dbResult[0];
+        String dbconnection = dbResult[1];
+
+        try (Connection con = DriverManager.getConnection(dbconnection); Statement stmt = con.createStatement();) {
 
             PreparedStatement st =  con.prepareStatement("INSERT INTO inputValue(km,fuel,date) VALUES (?,?,?)");
             st.setDouble(1,km);
