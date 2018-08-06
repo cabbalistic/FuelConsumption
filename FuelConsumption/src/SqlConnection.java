@@ -1,5 +1,5 @@
 public class SqlConnection {
-    public static String[] sqlConnection() throws Exception {
+    public  String[] sqlConnection() throws Exception {
         String dbConnection = "";
         String database = ReadDbConfigFile.readFileAsString();
         switch(database)

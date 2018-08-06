@@ -2,7 +2,11 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class EnterValue {
-    public static void enterValue() throws Exception {
+
+    SqlConnection connection = new SqlConnection();
+    MainManu ruturnMain = new MainManu();
+
+    public void enterValue() throws Exception {
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter the km: ");
         double km = input.nextDouble();
@@ -11,7 +15,7 @@ public class EnterValue {
         System.out.print("Please enter the date: ");
         String date = input.next();
 
-        String dbResult[] = SqlConnection.sqlConnection();
+        String dbResult[] = connection.sqlConnection();
         String database = dbResult[0];
         String dbconnection = dbResult[1];
 
@@ -32,7 +36,6 @@ public class EnterValue {
         }
 
         System.out.println();
-        MainManu.returnToMainMenu();
-        //getInputChoice(choice());
+        ruturnMain.returnToMainMenu();
     }
 }

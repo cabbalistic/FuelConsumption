@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class Report {
 
-    public static String[]  filterDate(){
+    SqlConnection connection = new SqlConnection();
+    MainManu ruturnMain = new MainManu();
+
+    public String[]  filterDate(){
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter year: ");
         String year = input.next();
@@ -17,7 +20,7 @@ public class Report {
         return new String[] {year, month, day};
     }
 
-    public static int[] filterDayCount() {
+    public int[] filterDayCount() {
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter the days: ");
         int days = input.nextInt();
@@ -26,15 +29,19 @@ public class Report {
         return new int[] {days, records};
     }
 
-    public static void viewReport() throws Exception {
+    public void viewReport() throws Exception {
+
+        //SqlConnection connection = new SqlConnection();
+
+
         generalReport();
         //averageReport();
         System.out.println();
         System.out.print("Press 1 to return to main menu\nPress 2 to view report for particular date\nPress 3 to view report for N days ago from today\n");
-        int option = MainManu.choice();
+        int option = ruturnMain.choice();
         switch (option) {
             case 1:
-                MainManu.returnToMainMenu();
+                ruturnMain.returnToMainMenu();
                 break;
             case 2:
                 String result[] = filterDate();
@@ -60,8 +67,8 @@ public class Report {
                 while (option != 1 && option != 2) {
                     System.out.println("There is NOT such option. Please try again");
                     System.out.println("Press 1 to back to main menu or 2 for detailed report");
-                    option= MainManu.choice();
-                    if (option == 1) MainManu.returnToMainMenu();
+                    option= ruturnMain.choice();
+                    if (option == 1) ruturnMain.returnToMainMenu();
                     if (option == 2) detailedReport(year,month,day);
                     if (option == 3) nDaysAgoReport(days,records);
 
@@ -69,8 +76,8 @@ public class Report {
         }
     }
 
-    public static void generalReport() throws Exception {
-        String dbResult[] = SqlConnection.sqlConnection();
+    public void generalReport() throws Exception {
+        String dbResult[] = connection.sqlConnection();
         String database = dbResult[0];
         String dbconnection = dbResult[1];
 
@@ -115,8 +122,8 @@ public class Report {
         }
     }
 
-    public static void detailedReport(String year, String month ,String day) throws Exception {
-        String dbResult[] = SqlConnection.sqlConnection();
+    public void detailedReport(String year, String month ,String day) throws Exception {
+        String dbResult[] = connection.sqlConnection();
         String database = dbResult[0];
         String dbconnection = dbResult[1];
         try (Connection con = DriverManager.getConnection(dbconnection); Statement stmt = con.createStatement();) {
@@ -159,8 +166,8 @@ public class Report {
         }
     }
 
-    public static void nDaysAgoReport(int days, int records) throws Exception {
-        String dbResult[] = SqlConnection.sqlConnection();
+    public void nDaysAgoReport(int days, int records) throws Exception {
+        String dbResult[] = connection.sqlConnection();
         String database = dbResult[0];
         String dbconnection = dbResult[1];
 
@@ -169,7 +176,7 @@ public class Report {
 
             switch (database){
                 case "msql":
-                    SQL =  "SELECT TOP " + records +" km, fuel, date FROM inputValue WHERE date between DateAdd(DD,-" + days +",GETDATE() ) and GETDATE() order by date";
+                    SQL =  "SELECT TOP " + records +" km, fuel, date FROM inputValue WHERE date between DateAdd(DD,-" + days +",GETDATE() ) and GETDATE()";
                     break;
                 case "mysql":
                     SQL = "SELECT km, fuel, date FROM inputValue WHERE  date BETWEEN DATE_ADD( NOW() , INTERVAL -" + days + " DAY) AND NOW() order by date LIMIT " + records;
@@ -201,7 +208,7 @@ public class Report {
 
             switch (database){
                 case "msql":
-                    SQL =  "SELECT TOP " + records +" (SUM(fuel)/SUM(km))*100 as average FROM inputValue WHERE date between DateAdd(DD,-" + days +",GETDATE() ) and GETDATE() order by date";
+                    SQL =  "SELECT TOP " + records +" (SUM(fuel)/SUM(km))*100 as average FROM inputValue WHERE date between DateAdd(DD,-" + days +",GETDATE() ) and GETDATE()";
                     break;
                 case "mysql":
                     SQL = "SELECT (SUM(fuel)/SUM(km))*100 as average FROM inputValue WHERE date BETWEEN DATE_ADD( NOW() , INTERVAL -" + days + " DAY) AND NOW() order by date LIMIT " + records;
