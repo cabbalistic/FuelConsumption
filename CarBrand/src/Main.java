@@ -29,6 +29,9 @@ public class Main {
                 case "renault":
                     country = " France" ;
                     break;
+                case "ford":
+                    country = " USA" ;
+                    break;
             }
             System.out.println(brand +country);
         }
