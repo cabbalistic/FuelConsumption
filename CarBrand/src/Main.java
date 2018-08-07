@@ -18,8 +18,18 @@ public class Main {
             String brand = "";
             String country = "";
             brand = obj.get(i).carBrand;
-            if (brand.equals("mercedes") || brand.equals("bwm")|| brand.equals("vw") || brand.equals("audi")) country = " Germany" ;
-            if (brand.equals("peugeot")) country = " France";
+            switch (brand) {
+                case "mercedes":
+                case "bwm":
+                case "vw":
+                case "audi":
+                    country = " Germany" ;
+                    break;
+                case "peugeot":
+                case "renault":
+                    country = " France" ;
+                    break;
+            }
             System.out.println(brand +country);
         }
     }
