@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Main {
     public static void main (String[] args) throws Exception {
@@ -8,11 +7,15 @@ public class Main {
 
         ArrayList<String> arrl = new ArrayList<String>();
         arrl = readSrc.readSourceFile();
-        Iterator<String> itr = arrl.iterator();
 
-        while(itr.hasNext()){
-            Car obj = new Car(itr.next());
-            System.out.println(obj.carBrand);
+        ArrayList<Car> obj = new ArrayList<Car>();
+
+        for (int i = 0; i < arrl.size(); i++) {
+            obj.add(new Car(arrl.get(i)));
+        }
+
+        for (int i = 0; i < obj.size(); i++) {
+            System.out.println(obj.get(i).carBrand);
         }
     }
 }
