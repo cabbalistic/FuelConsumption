@@ -10,10 +10,10 @@ public class Car {
 
     Car(String brand) {
         this.carBrand = brand;
-        this.country = returnCountry();
+        setCountry();
     }
 
-    private String returnCountry () {
+    private void setCountry () {
 
             switch (carBrand) {
                 case "mercedes":
@@ -30,6 +30,5 @@ public class Car {
                     this.country = " USA" ;
                     break;
             }
-        return country;
         }
 }
