@@ -8,12 +8,12 @@ public class Car {
     String carBrand;
     String country;
 
-    Car(String brand) throws Exception {
+    Car(String brand) {
         this.carBrand = brand;
-        this.country = setCountry();
+        this.country = returnCountry();
     }
 
-    public String setCountry ()throws Exception {
+    private String returnCountry () {
 
             switch (carBrand) {
                 case "mercedes":
