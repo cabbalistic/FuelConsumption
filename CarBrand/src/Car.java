@@ -14,20 +14,19 @@ public class Car {
     }
 
     private void setCountry () {
-
             switch (carBrand) {
                 case "mercedes":
                 case "bwm":
                 case "vw":
                 case "audi":
-                    this.country = " Germany" ;
+                    country = " Germany" ;
                     break;
                 case "peugeot":
                 case "renault":
-                    this.country = " France" ;
+                    country = " France" ;
                     break;
                 case "ford":
-                    this.country = " USA" ;
+                    country = " USA" ;
                     break;
             }
         }
