@@ -13,33 +13,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestAbv.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestAbv.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestAbv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+            <state relative-caret-position="340">
+              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding>
+                <element signature="e#0#947#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#674#675#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginAbv.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginAbv.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/LoginAbv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="323">
+              <caret line="34" column="103" lean-forward="true" selection-start-line="34" selection-start-column="103" selection-end-line="34" selection-end-column="103" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#137#138#0" expanded="true" />
-                <element signature="e#171#172#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,8 +59,8 @@
         <option value="$PROJECT_DIR$/src/main/java/LoginTestsNegative.java" />
         <option value="$PROJECT_DIR$/src/main/java/LoginTestsPositive.java" />
         <option value="$PROJECT_DIR$/src/main/java/AlaBala.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LoginAbv.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestAbv.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LoginAbv.java" />
       </list>
     </option>
   </component>
@@ -86,8 +83,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1602" />
-    <option name="y" value="139" />
+    <option name="x" value="438" />
+    <option name="y" value="-13" />
     <option name="width" value="1024" />
     <option name="height" value="688" />
   </component>
@@ -146,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestAbv">
+  <component name="RunManager" selected="TestNG.TestAbv.userLogin">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -211,6 +208,29 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="TestAbv.userLogin" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="webdrivereducation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestAbv" />
+      <option name="METHOD_NAME" value="userLogin" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -237,9 +257,11 @@
       <item itemvalue="Application.openGoogle" />
       <item itemvalue="JUnit.TestAbv" />
       <item itemvalue="TestNG.TestAbv" />
+      <item itemvalue="TestNG.TestAbv.userLogin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestAbv.userLogin" />
         <item itemvalue="TestNG.TestAbv" />
         <item itemvalue="JUnit.TestAbv" />
         <item itemvalue="Application.openGoogle" />
@@ -260,62 +282,62 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAbv - 2018.08.10 at 16h 22m 42s.xml">
-      <configuration name="TestAbv" configurationId="TestNG" />
+    <history-entry file="TestAbv_userLogin - 2018.08.11 at 16h 51m 24s.xml">
+      <configuration name="TestAbv.userLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAbv - 2018.08.10 at 16h 23m 30s.xml">
-      <configuration name="TestAbv" configurationId="TestNG" />
+    <history-entry file="TestAbv_userLogin - 2018.08.11 at 16h 51m 44s.xml">
+      <configuration name="TestAbv.userLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAbv - 2018.08.10 at 16h 24m 57s.xml">
-      <configuration name="TestAbv" configurationId="TestNG" />
+    <history-entry file="TestAbv_userLogin - 2018.08.11 at 16h 53m 31s.xml">
+      <configuration name="TestAbv.userLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAbv - 2018.08.10 at 16h 27m 23s.xml">
-      <configuration name="TestAbv" configurationId="TestNG" />
+    <history-entry file="TestAbv_userLogin - 2018.08.11 at 16h 53m 50s.xml">
+      <configuration name="TestAbv.userLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAbv - 2018.08.10 at 16h 31m 09s.xml">
-      <configuration name="TestAbv" configurationId="TestNG" />
+    <history-entry file="TestAbv_userLogin - 2018.08.11 at 16h 57m 29s.xml">
+      <configuration name="TestAbv.userLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAbv - 2018.08.10 at 16h 32m 27s.xml">
-      <configuration name="TestAbv" configurationId="TestNG" />
+    <history-entry file="TestAbv_userLogin - 2018.08.11 at 17h 04m 19s.xml">
+      <configuration name="TestAbv.userLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAbv - 2018.08.10 at 16h 33m 46s.xml">
-      <configuration name="TestAbv" configurationId="TestNG" />
+    <history-entry file="TestAbv_userLogin - 2018.08.11 at 17h 18m 26s.xml">
+      <configuration name="TestAbv.userLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAbv - 2018.08.10 at 16h 33m 59s.xml">
-      <configuration name="TestAbv" configurationId="TestNG" />
+    <history-entry file="TestAbv_userLogin - 2018.08.11 at 17h 18m 51s.xml">
+      <configuration name="TestAbv.userLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAbv - 2018.08.10 at 16h 34m 48s.xml">
-      <configuration name="TestAbv" configurationId="TestNG" />
+    <history-entry file="TestAbv_userLogin - 2018.08.11 at 17h 19m 53s.xml">
+      <configuration name="TestAbv.userLogin" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAbv - 2018.08.10 at 16h 36m 17s.xml">
-      <configuration name="TestAbv" configurationId="TestNG" />
+    <history-entry file="TestAbv_userLogin - 2018.08.11 at 17h 20m 06s.xml">
+      <configuration name="TestAbv.userLogin" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="-8" width="1296" height="1040" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.3272727" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32122904" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.29288027" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.10474861" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.16019417" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.12724936" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32960895" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.39886364" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.3226257" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -328,7 +350,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="31" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -438,44 +460,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/MethodInvocationHelper.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="190">
+          <caret line="379" selection-start-line="379" selection-end-line="379" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/TestRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="360" selection-start-line="360" selection-end-line="360" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/TestMethodWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="352" selection-start-line="352" selection-end-line="352" />
+        <state relative-caret-position="173">
+          <caret line="865" selection-start-line="865" selection-end-line="865" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LoginAbv.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/MethodInvocationHelper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#137#138#0" expanded="true" />
-            <element signature="e#171#172#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="338">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar!/org/openqa/selenium/WebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar!/org/openqa/selenium/support/ui/ExpectedCondition.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="313" column="30" lean-forward="true" selection-start-line="313" selection-start-column="30" selection-end-line="313" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TestAbv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        <state relative-caret-position="340">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#947#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LoginAbv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="34" column="103" lean-forward="true" selection-start-line="34" selection-start-column="103" selection-end-line="34" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
           </folding>
         </state>
       </provider>
