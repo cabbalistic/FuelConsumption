@@ -10,18 +10,18 @@ public class EmagLogin extends BasePage{
        driver.manage().window().maximize();
     }
 
-    public void openLoginPage() {
+    private void openLoginPage() {
         String url = LoadProperties.getValue("url");
         driver.get(url);
     }
 
-    public void goToMainPage(){
+    private void goToMainPage(){
         By mainPage = By.cssSelector(LoadProperties.getValue("mainPage"));
         WebElement backBtn = driver.findElement(mainPage);
         backBtn.click();
     }
 
-    public void goMyAccount() {
+    private void goMyAccount() {
         //find and click to MyAccount
         By myAccount = By.cssSelector(LoadProperties.getValue("myAccount"));
         WebElement myAccountBtn = findElementWithWait(myAccount, 20);
@@ -35,7 +35,7 @@ public class EmagLogin extends BasePage{
         proceedBtn.click();
     }
 
-    public void typeUsername() {
+    private void typeUsername() {
         //type in username
         By accountInput = By.cssSelector(LoadProperties.getValue("accoutInput"));
         WebElement inputUsername =  findElementWithWait(accountInput, 20);
@@ -44,7 +44,7 @@ public class EmagLogin extends BasePage{
         proceedBtn();
     }
 
-    public void typePassword() {
+    private void typePassword() {
         //type in username
         By passwordInput = By.cssSelector(LoadProperties.getValue("passwordInput"));
         WebElement inputPassword = findElementWithWait(passwordInput, 20);

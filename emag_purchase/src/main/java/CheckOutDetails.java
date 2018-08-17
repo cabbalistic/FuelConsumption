@@ -6,14 +6,14 @@ public class CheckOutDetails extends BasePage {
         super(driver);
     }
 
-    public void chooseDeliveryWithCourier(){
+    private void chooseDeliveryWithCourier(){
 
         By courierDeliver = By.cssSelector(LoadProperties.getValue("courierRadio"));
         WebElement courierRadio = findElementWithWait(courierDeliver, 20);
         courierRadio.click();
     }
 
-    public void choosePaymentWithCard(){
+    private void choosePaymentWithCard(){
         By payWithCard = By.cssSelector(LoadProperties.getValue("cardpaymentRadio"));
         WebElement payWithCardRadio = findElementWithWait(payWithCard, 20);
         payWithCardRadio.click();

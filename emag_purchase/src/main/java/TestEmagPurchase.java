@@ -35,12 +35,16 @@ public class TestEmagPurchase{
     public void userCanPlaceOrderUsingCourierDelivery(){
         //open url and go to main page
         emagLogin.openWebPage();
+
         //login
         emagLogin.userLogin();
+
         //choose category and subcategory
         productCategory.chooseCategory();
+
         //chose product and go to cart
         pickProduct.getProduct();
+
         //checkout details
         checkOutDetails.checkOut();
 

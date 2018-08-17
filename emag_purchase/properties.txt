@@ -1,6 +1,6 @@
 url=https://www.emag.bg/
-username=ivan_johnrazz@abv.bg
-password=Ivan_633460
+username=
+password=
 mainPage=.back-button
 myAccount=.widget-login-content div .btn-primary
 accoutInput=input#email
