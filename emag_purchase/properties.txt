@@ -1,0 +1,16 @@
+url=https://www.emag.bg/
+username=ivan_johnrazz@abv.bg
+password=Ivan_633460
+mainPage=.back-button
+myAccount=.widget-login-content div .btn-primary
+accoutInput=input#email
+passwordInput=input#password
+proceedButton=button.gui-btn
+categories=li.megamenu-list-department
+subcategories=.megamenu-item
+productId=button[data-offer-id="14316013"]
+goToCart=a.btn-primary[href="/cart/products?ref=add-to-cart-module_go-to-cart_button"]
+proceedCartButton=div.cart-widget-side div a
+courierRadio=#courierTab
+cardpaymentRadio=[for="paymentRadiocard"]
+purchaseProceedButton=[type="submit"]

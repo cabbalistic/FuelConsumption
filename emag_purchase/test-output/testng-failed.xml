@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test thread-count="5" name="emag_purchase(failed)">
+    <classes>
+      <class name="TestEmagPurchase">
+        <methods>
+          <include name="userCanPlaceOrderUsingCourierDelivery"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- TestEmagPurchase -->
+    </classes>
+  </test> <!-- emag_purchase(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
