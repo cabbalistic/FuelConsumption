@@ -2,15 +2,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
 
-public class EmagLogin extends BasePage{
+public class EmagLoginPage extends BasePage{
 
 
-    public EmagLogin(WebDriver driver){
+    public EmagLoginPage(WebDriver driver){
        super(driver);
        driver.manage().window().maximize();
     }
 
-    private void openLoginPage() {
+    private void openUrl() {
         String url = LoadProperties.getValue("url");
         driver.get(url);
     }
@@ -53,8 +53,8 @@ public class EmagLogin extends BasePage{
         proceedBtn();
     }
 
-    public void openWebPage(){
-        openLoginPage();
+    public void openPage(){
+        openUrl();
         goToMainPage();
     }
 

@@ -1,19 +1,19 @@
 import org.openqa.selenium.*;
 
-public class CheckOutDetails extends BasePage {
+public class CheckOutPage extends BasePage {
 
-    public CheckOutDetails(WebDriver driver){
+    public CheckOutPage(WebDriver driver){
         super(driver);
     }
 
-    private void chooseDeliveryWithCourier(){
+    private void deliveryWithCourier(){
 
         By courierDeliver = By.cssSelector(LoadProperties.getValue("courierRadio"));
         WebElement courierRadio = findElementWithWait(courierDeliver, 20);
         courierRadio.click();
     }
 
-    private void choosePaymentWithCard(){
+    private void paymentWithCard(){
         By payWithCard = By.cssSelector(LoadProperties.getValue("cardpaymentRadio"));
         WebElement payWithCardRadio = findElementWithWait(payWithCard, 20);
         payWithCardRadio.click();
@@ -25,8 +25,8 @@ public class CheckOutDetails extends BasePage {
 
     public void checkOut(){
         //checkout details
-        chooseDeliveryWithCourier();
+        deliveryWithCourier();
         //payment with card
-        choosePaymentWithCard();
+        paymentWithCard();
     }
 }

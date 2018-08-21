@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
-public class ProductCategory extends BasePage{
+public class ProductCategoryPage extends BasePage{
 
-    public ProductCategory (WebDriver driver){
+    public ProductCategoryPage(WebDriver driver){
         super(driver);
     }
 
@@ -16,7 +16,7 @@ public class ProductCategory extends BasePage{
         return inputList.stream().filter(it -> it.isDisplayed()).collect(Collectors.toList());
     }
 
-    public void chooseCategory(){
+    public void productCategory(){
         //hover the PC category
         List<WebElement> mainMenu = driver.findElements(By.cssSelector(LoadProperties.getValue("categories")));
         Actions act = new Actions(driver);

@@ -9,10 +9,10 @@ public class TestEmagPurchase{
 
     public LoadProperties property;
     public WebDriver driver;
-    public EmagLogin emagLogin;
-    public ProductCategory productCategory;
-    public PickProduct pickProduct;
-    public CheckOutDetails checkOutDetails;
+    public EmagLoginPage emagLogin;
+    public ProductCategoryPage productCategory;
+    public ProductPage pickProduct;
+    public CheckOutPage checkOutDetails;
 
 
     @BeforeTest
@@ -20,10 +20,10 @@ public class TestEmagPurchase{
         System.setProperty("webdriver.gecko.driver", "C:/GeckoDriver/geckodriver.exe");
 
         driver = new FirefoxDriver();
-        emagLogin = new EmagLogin(driver);
-        productCategory = new ProductCategory(driver);
-        pickProduct = new PickProduct(driver);
-        checkOutDetails = new CheckOutDetails(driver);
+        emagLogin = new EmagLoginPage(driver);
+        productCategory = new ProductCategoryPage(driver);
+        pickProduct = new ProductPage(driver);
+        checkOutDetails = new CheckOutPage(driver);
     }
 
     @AfterTest
@@ -34,13 +34,13 @@ public class TestEmagPurchase{
     @Test
     public void userCanPlaceOrderUsingCourierDelivery(){
         //open url and go to main page
-        emagLogin.openWebPage();
+        emagLogin.openPage();
 
         //login
         emagLogin.userLogin();
 
         //choose category and subcategory
-        productCategory.chooseCategory();
+        productCategory.productCategory();
 
         //chose product and go to cart
         pickProduct.getProduct();
