@@ -21,7 +21,7 @@ public class EmagLoginPage extends BasePage{
         backBtn.click();
     }
 
-    private void goMyAccount() {
+    public void goMyAccount() {
         //find and click to MyAccount
         By myAccount = By.cssSelector(LoadProperties.getValue("myAccount"));
         WebElement myAccountBtn = findElementWithWait(myAccount, 20);
@@ -35,37 +35,44 @@ public class EmagLoginPage extends BasePage{
         proceedBtn.click();
     }
 
-    private void typeUsername() {
+    public void typeUsernameAndPassword(String usrname, String pwd) {
         //type in username
         By accountInput = By.cssSelector(LoadProperties.getValue("accoutInput"));
         WebElement inputUsername =  findElementWithWait(accountInput, 20);
         inputUsername.click();
-        inputUsername.sendKeys(LoadProperties.getValue("username"));
+        inputUsername.sendKeys(usrname);
         proceedBtn();
-    }
 
-    private void typePassword() {
-        //type in username
+        //type in password
         By passwordInput = By.cssSelector(LoadProperties.getValue("passwordInput"));
         WebElement inputPassword = findElementWithWait(passwordInput, 20);
         inputPassword.click();
-        inputPassword.sendKeys(LoadProperties.getValue("password"));
+        inputPassword.sendKeys(pwd);
         proceedBtn();
     }
 
+//    public void typePassword(String pwd) {
+//        //type in username
+//        By passwordInput = By.cssSelector(LoadProperties.getValue("passwordInput"));
+//        WebElement inputPassword = findElementWithWait(passwordInput, 20);
+//        inputPassword.click();
+//        inputPassword.sendKeys(pwd);
+//        proceedBtn();
+//    }
+
     public void openPage(){
         openUrl();
-        goToMainPage();
+       // goToMainPage();
     }
 
-    public void userLogin(){
-        // go to account login form
-        goMyAccount();
-
-        // login the user
-        typeUsername();
-        typePassword();
-    }
+//    public void userLogin(){
+//        // go to account login form
+//        goMyAccount();
+//
+//        // login the user
+//        typeUsername();
+//        typePassword();
+//    }
 
 
 }

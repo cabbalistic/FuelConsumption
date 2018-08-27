@@ -2,6 +2,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 
@@ -15,6 +16,14 @@ public class TestEmagPurchase{
     public CheckOutPage checkOutDetails;
 
 
+    @DataProvider(name = "Authentication")
+
+    public static Object[][] credentials() {
+
+        return new Object[][] { { "ivan_johnrazz@abv.bg", "aaaaa" }, { "testuser_1", "Test@123" }};
+
+    }
+
     @BeforeTest
     public void beforeTest(){
         System.setProperty("webdriver.gecko.driver", "C:/GeckoDriver/geckodriver.exe");
@@ -24,6 +33,8 @@ public class TestEmagPurchase{
         productCategory = new ProductCategoryPage(driver);
         pickProduct = new ProductPage(driver);
         checkOutDetails = new CheckOutPage(driver);
+
+        driver.close();
     }
 
     @AfterTest
@@ -31,13 +42,16 @@ public class TestEmagPurchase{
        driver.close();
     }
 
-    @Test
-    public void userCanPlaceOrderUsingCourierDelivery(){
+    @Test  (dataProvider = "Authentication")
+    public void userCanPlaceOrderUsingCourierDelivery(String usrname, String pwd){
         //open url and go to main page
         emagLogin.openPage();
 
-        //login
-        emagLogin.userLogin();
+        //login page
+        emagLogin.goMyAccount();
+
+        // login the user
+        emagLogin.typeUsernameAndPassword(usrname, pwd);
 
         //choose category and subcategory
         productCategory.productCategory();
@@ -49,6 +63,7 @@ public class TestEmagPurchase{
         checkOutDetails.checkOut();
 
         Assert.assertEquals("https://www.emag.bg/cart/summary",driver.getCurrentUrl());
+
    }
 
 }
