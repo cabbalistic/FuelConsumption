@@ -1,9 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.testng.Assert;
 
 public class TestEmagPurchase{
@@ -20,11 +17,11 @@ public class TestEmagPurchase{
 
     public static Object[][] credentials() {
 
-        return new Object[][] { { "ivan_johnrazz@abv.bg", "aaaaa" }, { "testuser_1", "Test@123" }};
+        return new Object[][] { { "ivan_johnrazz@abv.bg", "asda" }, { "testuser_1", "Test@123" }};
 
     }
 
-    @BeforeTest
+    @BeforeMethod
     public void beforeTest(){
         System.setProperty("webdriver.gecko.driver", "C:/GeckoDriver/geckodriver.exe");
 
@@ -33,11 +30,9 @@ public class TestEmagPurchase{
         productCategory = new ProductCategoryPage(driver);
         pickProduct = new ProductPage(driver);
         checkOutDetails = new CheckOutPage(driver);
-
-        driver.close();
     }
 
-    @AfterTest
+    @AfterMethod
     public void afterTest(){
        driver.close();
     }

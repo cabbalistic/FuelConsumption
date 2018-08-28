@@ -25,6 +25,11 @@ public class BasePage {
         return driver.findElement(by);
     }
 
+    public WebElement findElementWithWaitClickable(By by, long timeOutInSeconds){
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(by));
+        return driver.findElement(by);
+    }
+
     public int findListIndexByString(List<WebElement> lst,String str) {
         int n = 0;
         for (int i = 0; i < lst.size(); i++) {

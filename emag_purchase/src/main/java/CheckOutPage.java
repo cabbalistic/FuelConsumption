@@ -19,7 +19,7 @@ public class CheckOutPage extends BasePage {
         payWithCardRadio.click();
 
         By purchaseProceedButton = By.cssSelector(LoadProperties.getValue("purchaseProceedButton"));
-        WebElement proceedButton = findElementWithWait(purchaseProceedButton, 20);
+        WebElement proceedButton = findElementWithWaitClickable(purchaseProceedButton, 20);
         proceedButton.click();
     }
 

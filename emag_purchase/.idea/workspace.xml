@@ -16,8 +16,8 @@
       <file leaf-file-name="TestEmagPurchase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestEmagPurchase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+            <state relative-caret-position="578">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#911#912#0" expanded="true" />
@@ -27,20 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="properties.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/properties.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CheckOutPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CheckOutPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="47" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="54" />
+            <state relative-caret-position="408">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#443#444#0" expanded="true" />
                 <element signature="e#465#466#0" expanded="true" />
@@ -52,8 +43,8 @@
       <file leaf-file-name="EmagLoginPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/EmagLoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+            <state relative-caret-position="-539">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +55,8 @@
       <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="204">
+              <caret line="27" column="50" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#305#306#0" expanded="true" />
@@ -78,8 +69,8 @@
       <file leaf-file-name="ProductCategoryPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ProductCategoryPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state relative-caret-position="120">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#423#424#0" expanded="true" />
@@ -129,7 +120,6 @@
         <option value="$PROJECT_DIR$/src/main/java/EmagClose.java" />
         <option value="$PROJECT_DIR$/src/main/java/EmagCategory.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/BasePage.java" />
         <option value="$PROJECT_DIR$/.properties.txt" />
         <option value="$PROJECT_DIR$/src/main/java/LoadProperties.java" />
         <option value="$PROJECT_DIR$/src/main/java/PickProduct.java" />
@@ -138,9 +128,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ProductCategory.java" />
         <option value="$PROJECT_DIR$/properties.txt" />
         <option value="$PROJECT_DIR$/test-output/testng-failed.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/CheckOutPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ProductCategoryPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/EmagLoginPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CheckOutPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/TestEmagPurchase.java" />
       </list>
     </option>
@@ -346,18 +337,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestEmagPurchase - 2018.08.17 at 09h 04m 05s.xml">
-      <configuration name="TestEmagPurchase" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestEmagPurchase - 2018.08.17 at 10h 55m 01s.xml">
-      <configuration name="TestEmagPurchase" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestEmagPurchase - 2018.08.21 at 09h 39m 24s.xml">
-      <configuration name="TestEmagPurchase" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestEmagPurchase - 2018.08.27 at 10h 35m 38s.xml">
-      <configuration name="TestEmagPurchase" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestEmagPurchase - 2018.08.27 at 10h 40m 39s.xml">
       <configuration name="TestEmagPurchase" configurationId="TestNG" />
     </history-entry>
@@ -376,6 +355,18 @@
     <history-entry file="TestEmagPurchase - 2018.08.27 at 11h 02m 43s.xml">
       <configuration name="TestEmagPurchase" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="TestEmagPurchase - 2018.08.27 at 11h 11m 59s.xml">
+      <configuration name="TestEmagPurchase" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestEmagPurchase - 2018.08.27 at 11h 12m 15s.xml">
+      <configuration name="TestEmagPurchase" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestEmagPurchase - 2018.08.27 at 11h 13m 36s.xml">
+      <configuration name="TestEmagPurchase" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestEmagPurchase - 2018.08.27 at 11h 32m 08s.xml">
+      <configuration name="TestEmagPurchase" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-8" width="1296" height="1040" extended-state="6" />
@@ -387,9 +378,9 @@
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.24271844" side_tool="true" visible="true" weight="0.18181819" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.24271844" side_tool="true" weight="0.3272727" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32928804" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.75728154" visible="true" weight="0.18181819" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.75728154" visible="true" weight="0.3602273" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
@@ -550,30 +541,6 @@ return tmp;</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProductCategoryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ProductPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -586,10 +553,41 @@ return tmp;</expression-string>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ProductCategoryPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/properties.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CheckOutPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="54" />
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#443#444#0" expanded="true" />
             <element signature="e#465#466#0" expanded="true" />
@@ -599,25 +597,18 @@ return tmp;</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EmagLoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        <state relative-caret-position="-539">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/properties.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TestEmagPurchase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+        <state relative-caret-position="578">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#911#912#0" expanded="true" />

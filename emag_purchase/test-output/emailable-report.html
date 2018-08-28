@@ -9,39 +9,22 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default Suite</th></tr>
-<tr><td><a href="#t0">emag_purchase</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">53 712</td><td></td><td></td></tr>
+<tr><td><a href="#t0">emag_purchase</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">64 472</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">emag_purchase &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">TestEmagPurchase</td><td><a href="#m0">userCanPlaceOrderUsingCourierDelivery</a></td><td rowspan="2">1535356267799</td><td rowspan="2">23474</td></tr><tr class="failedeven"><td><a href="#m1">userCanPlaceOrderUsingCourierDelivery</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">emag_purchase &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestEmagPurchase</td><td><a href="#m0">userCanPlaceOrderUsingCourierDelivery</a></td><td rowspan="1">1535358699913</td><td rowspan="1">27052</td></tr><tr><th colspan="4">emag_purchase &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestEmagPurchase</td><td><a href="#m1">userCanPlaceOrderUsingCourierDelivery</a></td><td rowspan="1">1535358667979</td><td rowspan="1">25653</td></tr></tbody>
 </table>
-<h2>emag_purchase</h2><h3 id="m0">TestEmagPurchase#userCanPlaceOrderUsingCourierDelivery</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>ivan_johnrazz@abv.bg</td><td>Ivan_633460</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;emg-button gtm_stj738bt emg-btn-large emg-btn-full&quot; type=&quot;submit&quot;&gt; is not clickable at point (1071.5,767.5) because another element &lt;div class=&quot;loader-overlay&quot;&gt; obscures it
+<h2>emag_purchase</h2><h3 id="m0">TestEmagPurchase#userCanPlaceOrderUsingCourierDelivery</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>testuser_1</td><td>Test@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: input#password (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;BAHUR&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 40332, moz:profile: C:\Users\Ivan\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 9e6ddcf3-25fa-4c3a-a113-72cfbb2fe69a
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at CheckOutPage.paymentWithCard(CheckOutPage.java:23)
-	at CheckOutPage.checkOut(CheckOutPage.java:30)
-	at TestEmagPurchase.userCanPlaceOrderUsingCourierDelivery(TestEmagPurchase.java:61)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestEmagPurchase#userCanPlaceOrderUsingCourierDelivery</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>testuser_1</td><td>Test@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .widget-login-content div .btn-primary (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;BAHUR&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 40332, moz:profile: C:\Users\Ivan\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 9e6ddcf3-25fa-4c3a-a113-72cfbb2fe69a
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 54980, moz:profile: C:\Users\Ivan\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: c7c0434c-86b7-441f-b310-80e989085f83
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 	at BasePage.findElementWithWait(BasePage.java:19)
-	at EmagLoginPage.goMyAccount(EmagLoginPage.java:27)
+	at EmagLoginPage.typeUsernameAndPassword(EmagLoginPage.java:48)
 	at TestEmagPurchase.userCanPlaceOrderUsingCourierDelivery(TestEmagPurchase.java:49)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestEmagPurchase#userCanPlaceOrderUsingCourierDelivery</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>ivan_johnrazz@abv.bg</td><td>Ivan_633460</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
