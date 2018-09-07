@@ -1,7 +1,7 @@
 # FuelConsumption
 
-emag_purchase (QA Automation traning) - This is my Last automation project (by my own). It is about testing a checkout of the biggsest
-online platform for shopping. I have used - property file (reading), Data Provider, Page Object Model, Annotations.
+emag_purchase (QA Automation traning) - This is my last automation project (by my own). It is about testing a checkout of the biggsest
+online platform in Bulgaria for shopping. I have used - property file (reading), Data Provider, Page Object Model, Annotations.
 
 webdrivereducation (QA Automation training) - This is my first automation project (by my own) and it is about login to email(Bulgarian one
 www.abv.bg) and print all subjects of the emails.
